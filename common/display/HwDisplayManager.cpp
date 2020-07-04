@@ -101,7 +101,7 @@ int32_t HwDisplayManager::freeDrmResources() {
 }
 
 int32_t HwDisplayManager::loadCrtcs() {
-    MESON_LOGV("Crtc loaded in loadPlanes: %d", mCrtcs.size());
+//    MESON_LOGV("Crtc loaded in loadPlanes: %d", mCrtcs.size());
     return 0;
 }
 

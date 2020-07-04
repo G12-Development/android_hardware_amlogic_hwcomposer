@@ -172,14 +172,14 @@ int32_t VariableModeMgr::updateHwcDispConfigs() {
             mDefaultMode.dpiX = it->second.dpiX;
             mDefaultMode.dpiY = it->second.dpiY;
         } else {
-            MESON_LOGV("[%s]: Hwc modes %d.", __func__, mHwcActiveModes.size());
+//            MESON_LOGV("[%s]: Hwc modes %d.", __func__, mHwcActiveModes.size());
             mHwcActiveModes.emplace(mHwcActiveModes.size(), it->second);
         }
     }
 
     // Add default mode as last, unconditionally in all cases. This is to ensure
     // availability of 1080p mode always.
-    MESON_LOGV("[%s]: Hwc modes %d.", __func__, mHwcActiveModes.size());
+//    MESON_LOGV("[%s]: Hwc modes %d.", __func__, mHwcActiveModes.size());
     mHwcActiveModes.emplace(mHwcActiveModes.size(), mDefaultMode);
     return HWC2_ERROR_NONE;
 }

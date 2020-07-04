@@ -94,8 +94,8 @@ void * HwcVsync::vsyncThread(void * data) {
         if (debug) {
             nsecs_t period = timestamp - pThis->mPreTimeStamp;
             UNUSED(period);
-            if (pThis->mPreTimeStamp != 0)
-                MESON_LOGD("wait for vsync success, peroid: %lld", period);
+//            if (pThis->mPreTimeStamp != 0)
+//                MESON_LOGD("wait for vsync success, peroid: %lld", period);
             pThis->mPreTimeStamp = timestamp;
         }
 

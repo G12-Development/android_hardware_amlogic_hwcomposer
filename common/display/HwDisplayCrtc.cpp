@@ -159,8 +159,8 @@ int32_t HwDisplayCrtc::update() {
                     break;
                 }
             }
-            MESON_LOGD("crtc(%d) update (%s) (%d) -> (%s).",
-                mId, displayMode.c_str(), mModes.size(), mCurModeInfo.name);
+//            MESON_LOGD("crtc(%d) update (%s) (%d) -> (%s).",
+//                mId, displayMode.c_str(), mModes.size(), mCurModeInfo.name);
         }
     } else {
         MESON_LOGD("crtc(%d) update with no connector", mId);
