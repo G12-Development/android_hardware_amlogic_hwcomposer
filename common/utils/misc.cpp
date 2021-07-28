@@ -23,6 +23,8 @@
 #include <ui/GraphicBufferMapper.h>
 #endif
 
+#include <optional>
+
 #include <misc.h>
 
 bool sys_get_bool_prop(const char *prop, bool defVal) {

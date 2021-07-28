@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-HWC_CPP_FLAGS := -std=c++14
+HWC_CPP_FLAGS := -std=c++17
 
 HWC_C_FLAGS := -DPLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION)
 ifeq ($(TARGET_BUILD_VARIANT), user)
@@ -31,7 +31,6 @@ HWC_SHARED_LIBS := \
     libutils \
     libsync \
     libion \
-    libge2d \
     libui \
     libbinder
 
