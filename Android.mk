@@ -13,6 +13,7 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
+ifeq ($(TARGET_BOARD_PLATFORM), amlogic)
 
 HWC_CPP_FLAGS := -std=c++17
 
@@ -60,3 +61,4 @@ HWC_C_FLAGS += -DHWC_ENABLE_DISPLAY_MODE_MANAGEMENT
 endif
 
 include $(call all-makefiles-under, $(LOCAL_PATH))
+endif
